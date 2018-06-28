@@ -1,4 +1,4 @@
-
+/* tamaño que aplicaremos a la pagina donde aplicaremos las columnas */
 
 #wrapper {
     width: 90%;
@@ -21,22 +21,13 @@ img {
     column-gap: 15px;
     column-fill: auto;
 }
-#colums {
-    -webkit-column-count: 2;
-    -webkit-column-gap: 10px;
-    -webkit-backdrop-fill: auto;
-    -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    -moz-column-fill: auto;
-    column-count: 1;
-    column-gap: 15px;
-    column-fill: auto;
-}
+
 
 .grid {
     display: inline-block;
     background: #FEFEFE;
     -webkit-column-break-inside: avoid;
+    break-inside: avoid;
     -moz-column-break-inside: avoid;
     padding-bottom: 10px;
     background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
@@ -97,11 +88,4 @@ img {
         column-count: 4;
     }
 }
-/* 
-@media (min-width: 1140px) {
-    #colums {
-        -webkit-column-count: 5;
-        -moz-column-count: 5;
-        column-count: 5;
-    }
-} */
+
